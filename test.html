@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button class="skip">Skip to Main</button>
+    <a href="...." id="main">Main</a>
+
+    <a href=”....”>learn more</a>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+// once the button with class "skip" is clicked it will focus on the "Main" link
+            $(".skip").click(function () {
+                $("#main").focus();
+            });
+
+// every link that contains the text "learn more", a class of "learn" will be added to it
+            $("a:contains('learn more')").addClass("learn");
+
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
