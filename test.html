@@ -13,26 +13,24 @@
 
     <button class="skip">Skip to Main</button>
     <a href="...." id="main">Main</a>
-
     <a href=”....”>learn more</a>
 
-    <script type="text/javascript">
+<script type="text/javascript">
+
 // the code inside will only run once the page DOM is ready for JavaScript code to execute    
-        $(document).ready(function () {
+    $(document).ready(function () {
+        
 // once the button with class "skip" is clicked it will focus on the "Main" link
-            $(".skip").click(function () {
-                $("#main").focus();
-            });
-
-// every link that contains the text "learn more", a class of "learn" will be added to it
-            $("a:contains('learn more')").addClass("learn");
-
-
+        $(".skip").click(function () {
+            $("#main").focus();
         });
 
+// every link that contains the text "learn more", a class of "learn" will be added to it
+        $("a:contains('learn more')").addClass("learn");
 
+    });
 
-    </script>
+</script>
 
 </body>
 
